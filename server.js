@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static(__dirname + '/www'));
+app.use(express.static(__dirname + '/carstore/www'));
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '../www/index.html'));
+    res.sendFile(path.join(__dirname + '/carstore/www/index.html'));
 
 });
 
